@@ -140,7 +140,7 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="min-h-screen bg-white text-black flex flex-col items-center p-8 mt-12 mb-5">
+    <div id="projects" className="min-h-screen bg-white text-black flex flex-col items-center py-8  mt-24 mb-5">
       {/* Section Title */}
       <motion.h2
         className="text-4xl font-bold mb-12"
@@ -153,13 +153,13 @@ const Projects = () => {
       </motion.h2>
 
       {/* Filter Buttons */}
-      <div className="flex overflow-x-auto gap-4 mb-8 py-2 scrollbar-hide">
-        <div className="flex flex-nowrap space-x-4 px-4">
+      <div className="flex overflow-x-auto gap-4 mb-8 py-2 w-full relative z-10">
+        <div className="flex flex-nowrap  space-x-4 w-screen">
           {techOptions.map((tech) => (
             <button
               key={tech.name}
               onClick={() => handleFilterClick(tech)}
-              className={`flex items-center px-4 py-2 rounded-lg shadow-md transition-all duration-300 whitespace-nowrap ${
+              className={`flex text-center justify-center items-center px-4 py-2 rounded-lg shadow-md transition-all duration-300 whitespace-nowrap ${
                 selectedTech === tech.name
                   ? "bg-blue-500 text-white"
                   : "bg-gray-200 text-black"
@@ -181,7 +181,7 @@ const Projects = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
+      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl px-3">
         {filteredProjects.map((project, index) => (
           <motion.div
             key={index}
