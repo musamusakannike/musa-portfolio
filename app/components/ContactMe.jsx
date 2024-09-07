@@ -136,7 +136,7 @@ const ContactMe = () => {
         {/* Contact Details and Social Icons */}
         <div className="flex flex-col items-start justify-center space-y-6 p-8">
           <h2 className="text-4xl font-semibold text-gray-800">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           <p className="text-lg text-gray-600">
             I&apos;m open to collaborations, freelance projects, or just a chat.
