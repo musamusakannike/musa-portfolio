@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="flex space-x-12 mb-8 md:mb-0">
             <ul className="text-sm">
               <li className="mb-2">
-                <a href="#home" className="hover:text-blue-400 transition duration-300">Home</a>
+                <a href="#" className="hover:text-blue-400 transition duration-300">Home</a>
               </li>
               <li className="mb-2">
                 <a href="#about" className="hover:text-blue-400 transition duration-300">About</a>
